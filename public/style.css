@@ -1,0 +1,39 @@
+body {
+  background-image:url("images/doll.jpg");
+background-color:rgb(171, 161, 246);
+  color: white;
+}
+
+
+nav a {
+  border: 4px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: serif;
+  padding: 20px;
+  margin: 20px;
+  font-weight: bold;
+  color: rgb(171, 161, 246);
+  background-color: white;
+
+}
+nav a:hover {
+  font-size: 25px;
+  background-color: rgb(230, 131, 196);
+color: white;
+}
+button {
+  color:  rgb(171, 161, 246);
+  font-size: 16px;
+  font-family: serif;
+  font-weight: bold;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+
+}
+button:hover {
+  background-color: rgb(230, 131, 196);
+  color: white;
+}

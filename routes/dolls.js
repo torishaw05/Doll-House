@@ -1,5 +1,6 @@
+
 const express     = require("express");
-const Cars        = require("../collectios/dolls");
+const Dolls        = require("../collections/dolls");
 const router      = express.Router();
 let results= [];
 
@@ -15,20 +16,16 @@ function findDolls(req, res, next) {
       console.log(err);
     });
 };
-router.get("/", getDolls, function(req, res) {
+router.get("/", findDolls, function(req, res) {
   res.render("dolledit", {dolls: results});
 });
-
-
 router.post("/", function(req, res) {
   Dolls.create({
-    size: req.body.size,
+    inches: req.body.inches,
+    material: req.body.material,
     color: req.body.color,
-    year: req.body.brand,
-    brand: [
-      {brandName: req.body.brand},
-      {history: req.body.history}
-    ],
+    brand: req.body.brand,
+    history: req.body.history,
   })
   .then(function(data) {
     console.log(data);

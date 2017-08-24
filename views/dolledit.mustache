@@ -1,35 +1,35 @@
 <header>
+  <center>
   <h1>Doll House</h1>
+  <center>
 </header>
-<article>
+<body>
   {{#dolls}}
-  <a class="content" href="{{_id}}"></a>
-  <div class="singleDolls">
-    <h3>{{size}} {{material}} {{brand}}</h3>
-    <ul>
-      <li>Color: {{color}}</li>
-      <li>Cylinders: {{cylinders}}</li>
-      <!-- <li>Displacement: {{displacement}}</li> -->
-    </ul>
+  <a class="content" href="{{id1}}"></a>
+  <div class="per_doll">
+
+<center>
+        <h5>Material: {{material}}</h5>
+        <h5>Inches: {{inches}}</h5>
+        <h5>Brand: {{brand}}</h5>
+        <h5>Color: {{color}}</h5>
+        <h5>History: {{history}}</h5>
+
     <button type="submit" name="edit">Design Doll</button>
-    <button type="submit" name="trash">Trash a Doll</button>
+    <button type="submit" name="trash">Trash Doll</button>
   </div>
 {{/dolls}}
 {{^dolls}}
 {{/dolls}}
-</article>
+<center>
   <h2>Create a Doll</h2>
   <form action="/" method="post">
-    <input type="text" name="size" placeholder="Size">
-    <br>
+    <input type="number" name="inches" placeholder="Inches">
     <input type="text" name="material" placeholder="Material">
-    <br>
-    <input type="text" name="brand" placeholder="Brand">
-    <br>
+  <input type="text" name="brand" placeholder="Brand">
     <input type="text" name="color" placeholder="Color">
-    <br>
-    <input type="number" name="history" placeholder="Modern/Ancient">
-    <br>
-    <button type="submit" name="button">Add Car</button>
-  </br>
+    <input type="text" name="history" placeholder="Modern/Ancient">
+  <button type="submit" name="button">Box a Doll</button>
+</center>
   </form>
+</body>
