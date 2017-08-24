@@ -1,0 +1,35 @@
+<header>
+  <h1>Doll House</h1>
+</header>
+<article>
+  {{#dolls}}
+  <a class="content" href="{{_id}}"></a>
+  <div class="singleDolls">
+    <h3>{{size}} {{material}} {{brand}}</h3>
+    <ul>
+      <li>Color: {{color}}</li>
+      <li>Cylinders: {{cylinders}}</li>
+      <!-- <li>Displacement: {{displacement}}</li> -->
+    </ul>
+    <button type="submit" name="edit">Design Doll</button>
+    <button type="submit" name="trash">Trash a Doll</button>
+  </div>
+{{/dolls}}
+{{^dolls}}
+{{/dolls}}
+</article>
+  <h2>Create a Doll</h2>
+  <form action="/" method="post">
+    <input type="text" name="size" placeholder="Size">
+    <br>
+    <input type="text" name="material" placeholder="Material">
+    <br>
+    <input type="text" name="brand" placeholder="Brand">
+    <br>
+    <input type="text" name="color" placeholder="Color">
+    <br>
+    <input type="number" name="history" placeholder="Modern/Ancient">
+    <br>
+    <button type="submit" name="button">Add Car</button>
+  </br>
+  </form>
