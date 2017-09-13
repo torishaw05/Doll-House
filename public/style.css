@@ -16,6 +16,7 @@ nav a {
   font-weight: bold;
   color: rgb(171, 161, 246);
   background-color: white;
+  border: 6px solid rgb(230, 131, 196) ;
 
 }
 nav a:hover {
@@ -31,9 +32,33 @@ button {
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  border: 6px solid rgb(230, 131, 196) ;
+
 
 }
 button:hover {
   background-color: rgb(230, 131, 196);
   color: white;
+}
+
+#dolls {
+  border: 10px solid rgb(230, 131, 196) ;
+  padding: 0px;
+  margin: 20px;
+  border-radius: 15px;
+  height: 400px;
+  width: 500px;
+
+}
+#boxes {
+  display: inline-block;
+display: flex;
+flex-flow: column;
+}
+#form {
+  border: 10px solid rgb(230, 131, 196) ;
+  width: 500px;
+  border-radius: 15px;
+  height: 300px;
+
 }

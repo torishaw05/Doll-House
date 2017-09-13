@@ -4,32 +4,52 @@
   <center>
 </header>
 <body>
+  <center>
+    <div id="form">
+    <h2>Create a Doll</h2>
+    <form action="/" method="post">
+      <input type="number" name="inches" placeholder="Inches">
+      <input type="text" name="material" placeholder="Material">
+    <input type="text" name="brand" placeholder="Brand">
+      <input type="text" name="color" placeholder="Color">
+      <input type="text" name="history" placeholder="Modern/Ancient">
+      <br>
+      <br>
+      <br>
+    <button type="submit" name="button">Box a Doll</button>
+  </center>
+    </form>
+  </div>
   {{#dolls}}
   <a class="content" href="{{id1}}"></a>
   <div class="per_doll">
 
 <center>
-        <h5>Material: {{material}}</h5>
-        <h5>Inches: {{inches}}</h5>
-        <h5>Brand: {{brand}}</h5>
-        <h5>Color: {{color}}</h5>
-        <h5>History: {{history}}</h5>
+  <div id='boxes'>
+  <div id ='dolls'>
 
-    <button type="submit" name="edit">Design Doll</button>
-    <button type="submit" name="trash">Trash Doll</button>
+  <p>
+        <h5>Material: {{material}}</h5>
+
+       <h5>Inches:{{inches}}</h5>
+
+        <h5>Brand:{{brand}}</h5>
+
+        <h5>Color:{{color}}</h5>
+
+        <h5>History:{{history}}</h5>
+
+
+
+    <!-- <button id='trash' type="submit" name="edit">Design Doll</button>
+    <button id='trash' type="submit" name="trash" >Trash Doll</button> -->
+
+    <!-- <input type="submit" name="delete" value="Delete!"/>      <!-- <p><a href="/edit/{{id}}">Design Doll</a></p> -->
+    <!-- <p><a href="/trash/{{id}}">Trash Doll</a></p> -->
   </div>
+</div>
 {{/dolls}}
 {{^dolls}}
 {{/dolls}}
-<center>
-  <h2>Create a Doll</h2>
-  <form action="/" method="post">
-    <input type="number" name="inches" placeholder="Inches">
-    <input type="text" name="material" placeholder="Material">
-  <input type="text" name="brand" placeholder="Brand">
-    <input type="text" name="color" placeholder="Color">
-    <input type="text" name="history" placeholder="Modern/Ancient">
-  <button type="submit" name="button">Box a Doll</button>
-</center>
-  </form>
+
 </body>
